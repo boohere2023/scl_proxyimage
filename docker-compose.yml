@@ -2,7 +2,7 @@ version: "3"
 
 services:
   aapanel:
-    image: sclbo/proxy_image:latest
+    image: sclbo/proxy_image:lib
     container_name: "aapanel-proxy"
     ports:
       - "${AAPANEL_PORT}:7800"
