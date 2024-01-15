@@ -4,6 +4,7 @@ services:
   aapanel:
     image: sclbo/proxy_image:lib
     container_name: "aapanel-proxy"
+    restart: unless-stopped
     ports:
       - "${AAPANEL_PORT}:7800"
       - "${WEBSERVER_HOST_PORT}:80"
