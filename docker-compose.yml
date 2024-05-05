@@ -13,6 +13,7 @@ services:
       - "${REDIS_PORT}:6379"
     volumes: 
       - ${WEBSITE_LOG}:/www/wwwlogs
+      - ${WEBSITE_CACHE}:/www/server/nginx/proxy_cache_dir
     env_file:
       - ./.env
 
